@@ -2,7 +2,7 @@ apply plugin: 'android-library'
 
 dependencies {
     compile project(':library')
-    compile "com.android.support:appcompat-v7:+"
+    compile "com.android.support:appcompat-v7:19.+"
 }
 
 android {
@@ -15,4 +15,5 @@ android {
     }
 }
 
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+apply from: 'https://raw.githubusercontent.com/robbypond/gradle-mvn-push/master/gradle-mvn-push.gradle'
