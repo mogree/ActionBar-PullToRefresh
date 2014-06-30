@@ -1,4 +1,4 @@
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 dependencies {
     compile project(':extras/actionbarsherlock')
@@ -22,6 +22,10 @@ android {
             signingConfig signingConfigs.release
         }
     }
+
+	lintOptions {
+		abortOnError false
+	}
 }
 
 File propFile = file('signing.properties');
